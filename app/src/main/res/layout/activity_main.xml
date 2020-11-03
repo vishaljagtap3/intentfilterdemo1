@@ -11,7 +11,7 @@
         android:id="@+id/edtFilePath"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="file:///storage/sdcard/bitcode/flag.jpg" />
+        android:text="file:///storage/emulated/0/bitcode/flag.jpg" />
 
     <Button
         android:id="@+id/btnShowImage"

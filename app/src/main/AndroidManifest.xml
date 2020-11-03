@@ -14,16 +14,19 @@
 
         <activity android:name=".ImageActivity">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="in.bitcode.media.image.VIEW"/>
                 <action android:name="in.bitcode.media.image.SHOW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="in.bitcode.type.EDU"/>
+                <data android:scheme="file" android:mimeType="image/jpg"/>
+                <data android:scheme="file" android:mimeType="image/png"/>
             </intent-filter>
         </activity>
 
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

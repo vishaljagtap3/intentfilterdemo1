@@ -16,7 +16,8 @@ public class ImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         mImg = new ImageView(this);
-        mImg.setImageURI( Uri.parse( getIntent().getStringExtra("path") ) );
+        //mImg.setImageURI( Uri.parse( getIntent().getStringExtra("path") ) );
+        mImg.setImageURI( getIntent().getData() );
         setContentView(mImg);
     }
 }
